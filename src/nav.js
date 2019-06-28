@@ -1,9 +1,21 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-class nav extends Component {
+class Nav extends Component {
     render() {
-        return <div />
+        return (
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/profile">Profile</Link>
+                    </li>
+                </ul>
+            </nav>
+        );
     }
 }
 
-export default nav
+export default Nav;
